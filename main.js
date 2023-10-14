@@ -4,8 +4,9 @@ var prix= 10;
 //fonction calculer le nomber de click btn + et affichier dans leur case
 
 function compteur() {
-    qntt++;
-    document.getElementById("qnt").value=qntt; 
+
+    qntt++; 
+    document.getElementById("qnt").value= qntt;
     document.getElementById("prix").value=qntt*prix ;  
 }
 document.getElementById("plus").addEventListener("click",compteur); // appel fonction compteur 
@@ -67,6 +68,19 @@ document.getElementById("moin2").addEventListener("click",compteurM2);
 
 
 
-function change (){
-    document.getElementById("img").background = red;}
-document.getElementById("img").addEventListener("click", change());
+//en utilise "removechild"  pour suprime le article
+function delet() {
+    var parentElem = document.getElementById('main');
+     var childElem = document.getElementById('articl');
+     parentElem.removeChild(childElem);
+}
+function delet1() {
+    var parentElem = document.getElementById('main');
+     var childElem = document.getElementById('articl1');
+     parentElem.removeChild(childElem);
+}
+function delet2() {
+    var parentElem = document.getElementById('main');
+     var childElem = document.getElementById('articl2');
+     parentElem.removeChild(childElem);
+}
