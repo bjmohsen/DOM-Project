@@ -84,3 +84,12 @@ function delet2() {
      var childElem = document.getElementById('articl2');
      parentElem.removeChild(childElem);
 }
+function changeColor(id) {
+    var like =document.querySelector('id');
+    like.addEventListener('click',function change() { 
+        if (like.style.color != red )
+        {
+            like.style.color = red;
+        }
+    })
+}
